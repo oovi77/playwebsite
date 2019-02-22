@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ovi's home page"/>
+    <meta name="robots" content="noindex nofollow"/> <!--do not want page or any of its links to be indexed-->
+    <meta http-equiv="author" content="Ovi Ofrim"/>
+    <meta http-equiv="pragma" content="no-cache"/> <!--want browser to reload page every time-->
     <title>Ovi's Website</title>
 </head>
 <body>
@@ -49,5 +53,80 @@
             <li><a href="project.html">Projects</a></li>
 
         </ul>
+
+        <p>Testing out forms</p>
+
+        <fieldset>  <!--Use fieldset and legend to create the box around login info-->
+            <legend>Login Info</legend>
+            <form action="" method="">
+                <label> Email: <br>
+                    <input type="email" name="email">
+                </label>
+                    <br>
+
+                <label> Password: <br>
+                    <input type="password" name="password">
+                </label>
+        </fieldset>
+                <br>
+
+        <fieldset>
+            <legend>Your Details</legend>
+            <label> Full Name: <br>
+                <input type="text" name="fullname">
+            </label>
+                <br>
+
+            <label> Your Birthdate: <br>
+                <input type="date" name="birth_date">
+            </label>
+                <br>
+
+            <p>Gender</p>
+            <label> Male 
+                 <input type="radio" name="gender_option">
+            </label>
+                 
+            
+            <label> Female 
+                <input type="radio" name="gender_option">
+            </label>
+                 <br>
+
+            <p>Hobbies: </p>
+            <label> Chess
+                    <input type="checkbox" name="hobbies">
+               </label>
+            
+             <label> Snooker
+                 <input type="checkbox" name="hobbies">
+            </label>
+            
+             <label> Soccer
+                 <input type="checkbox" name="hobbies">
+            </label>
+
+             <label> Basketball
+                 <input type="checkbox" name="hobbies">
+            </label>
+
+            <p>Income: </p>
+            <select name="income">
+                <option value="30,000">$30,000</option> 
+                <option value="40,000">$40,000</option> 
+                <option value="50,000">$50,000</option> 
+            </select>
+            <br> <br> <br>
+
+            <label>Your Bio: <br>
+            <textarea name="description" rows="8"cols="88"></textarea>
+            </label>
+            <br>
+            <input type="submit" name="submit" value="sign up!">
+        </fieldset>
+
+        </form>
+
+        <p>Copyright &copy 2019 Ovi Ofrim</p>
 </body>
 </html>
